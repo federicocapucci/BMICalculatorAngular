@@ -1,0 +1,46 @@
+.fondoItem{
+    background-color: #FF111328;
+    height: 130px;
+    border-radius: 20px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+
+.sex{
+    font-size: 40px;  
+    padding: 5px;
+}
+
+.sexInactive{
+    background-color:#7d2f2f33;
+    color: #333;
+}
+
+.styledNumberDiv{
+    margin-top: -25px;
+}
+
+.form-range{
+    padding: 0 20px;
+}
+
+input[type=range]::-webkit-slider-thumb{
+    background: #f36;
+    height: 18px;    
+    width: 50px;
+    border-radius: 20px;    
+}
+
+.sumaResta{
+    cursor: pointer;
+    background-color: #FF4C4F5E;
+    font-size: 20px;
+    padding: 7px;
+    margin: 0 2px;
+    border-radius: 50%;
+}
+
+.sumaResta:hover{
+    background-color: #FF6C6F7E;    
+}

@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col-lg-4 offset-lg-4">
+        <h3 class="main-title">RESULTS</h3>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="fondoItem">
+                    <div class="itemContainer">
+                        <p class="results" [ngClass]="{resultsGood: bmi<=24.9 && bmi>=18.5}">{{result}}</p>
+                            <p class="styledNumber" >{{bmi}}</p>
+                            <p class="interpretation">{{interpretation}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <button routerLink="/" class="btn btn-primary btn-lg btn-color">RE-CALCULATE</button>
+                </div>
+            </div>
+        </div>
+    </div>

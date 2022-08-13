@@ -1,0 +1,28 @@
+.fondoItem{
+    background-color: #FF111328;
+    height: 430px;
+    border-radius: 20px;
+    margin-top: 20px;    
+    color: #fff;
+    
+}
+
+.results{
+    color: #833;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.resultsGood{
+    color: #12bd45;
+}
+
+.resultsGood
+
+
+.styledNumber{
+    font-size: 80px;
+    font-weight: 700;    
+    padding: 25px 0 45px 0;
+}

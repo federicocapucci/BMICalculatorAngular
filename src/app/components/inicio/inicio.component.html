@@ -1,0 +1,60 @@
+<div class="row">
+    <div class="col-lg-4 offset-lg-4">
+        <h3 class="main-title">BMI CALCULATOR</h3>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="fondoItem" [ngClass]="{'sexInactive': sex === 'WOMAN'}">
+                    <div class="itemContainer" style="cursor:pointer" (click)="masc()">
+                        <i class="fa-solid fa-mars sex"></i>
+                        <p>MAN</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="fondoItem" [ngClass]="{'sexInactive': sex === 'MAN'}">
+                    <div class="itemContainer" style="cursor:pointer" (click)="fem()">
+                        <i class="fa-solid fa-venus sex"></i>
+                        <p>WOMAN</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="fondoItem">
+                    <div class="itemContainer">
+                        <p>Height</p>
+                        <div class="styledNumberDiv"><span class="styledNumber">{{height}}</span>cm </div>
+                        <input type="range" class="form-range" min="60" max="280" [value]="height" (input)="changeHeight($event)">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="fondoItem">
+                    <div class="itemContainer">
+                        <p>Weight</p>
+                        <div class="styledNumberDiv"><span class="styledNumber">{{weight}}</span>kg </div>  
+                        <span><i class="fa-solid fa-minus sumaResta" (click)="weight = weight - 1" (dblclick)="weight = weight - 9"></i>
+                            <i class="fa-solid fa-plus sumaResta" (click)="weight = weight + 1" (dblclick)="weight = weight + 9"></i>                        
+                        </span>                      
+                    </div>       
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="fondoItem">
+                    <div class="itemContainer">
+                        <p>Age</p>
+                        <div class="styledNumberDiv"><span class="styledNumber">{{age}}</span></div>
+                        <span><i class="fa-solid fa-minus sumaResta" (click)="age = age - 1" (dblclick)="age = age - 9"></i>
+                            <i class="fa-solid fa-plus sumaResta" (click)="age = age + 1" (dblclick)="age = age + 9"></i>                        
+                        </span>
+                    </div>       
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <button class="btn btn-primary btn-lg btn-block btn-color" (click)="calcularBMI()">CALCULATE</button>
+            </div>
+        </div>
+    </div>
+
+</div>

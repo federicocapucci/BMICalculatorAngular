@@ -1,1 +1,55 @@
-/* You can add global styles to this file, and also import other style files */
+
+body{
+    background-color: #0a0e21;
+    color: white;
+    text-align: center; 
+    margin-top: 25px;
+}
+
+.main-title{
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+
+.row{
+    margin: 20px 0 5px 0;       
+    
+}
+
+.btn-color{
+    background-color: #f36;
+    border-color: #f36;
+    border-radius: 25px;
+    width: 100%;
+}
+
+.btn-color:hover{    
+    background-color: #f69;
+    border-color: #e25; 
+    transition: all 0.2s ease-in;
+}
+
+.btn-color:focus{    
+    background-color: #f69;
+    border-color: #e25; 
+    transition: all 0.2s ease-in;
+}
+
+.itemContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.styledNumber{
+    font-size: 32px;
+    font-weight: 800;    
+}
+
+.interpretation{
+    margin: 10px;
+    font-size: 18px;
+}
